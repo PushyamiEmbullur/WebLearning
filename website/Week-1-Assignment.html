@@ -1,90 +1,46 @@
 <!DOCTYPE html>
+
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <head>
 	<title>Module 2 Assignment</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	
 </head>
 <style>
-	*{
+	 *{
 		box-sizing: border-box;
-		margin:0;
-		padding: 0;
+		
+
 	}
-h2{
-	text-align: center;
-	margin-top: 30px;
-}
-div{
-	background-color: chocolate;
-	position: relative;
-   
-}
-#div1{
-	width:150px;
-height:150px;
- border:2px solid black;
+	
+	.row > div
+	{
+		background-color: gray;
+		border: 5px solid black;
+		margin: 15px;
+		margin-bottom: 20px;
 
-}
-#div2{
-	width:150px;
-height:150px;
- border:2px solid black;
- position: absolute;
-	top:0px;
-	left:180px;
+	} 
+	h2{
+		text-align: center;
+	}
 
-}
-#div3{
-	width:150px;
-height:150px;
- border:2px solid black;
- position: absolute;
-	top:0px;
-	left:400px;
-
-}
-p{
-width:75px;
-height:20px;
- border:1px solid black;
-
-
-/*margin:10px;*/
-}
-#p1{
-	background-color:lightblue;
-	position: absolute;
-	top: 0;
-	left: 75px;
-
-
-}
-#p2{
-	background-color: green;
-	color: white;
-	position: absolute;
-	top:0px;
-	left:150px;
-
-
-}
-#p3{
-	background-color: gray;
-	color: black;
-	position: absolute;
-	top:0px;
-	left:300px;
-
-}
+@media:(max-width: 767px){
+	div{
+		width: 400px;
+		left:15px;
+	}
+};
 </style>
 <body>
 <h2>Our Menu</h2>
-<div>
-	<div id="div1"><p id="p1">Chicken</p>something</div>
-	<div id="div2"><p id="p2">Beef</p>something</div>
-	<div id="div3"><p id="p3">Sushi</p>something</div>
-
-
-
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg col-md-4" ><p >Chicken</p>something</div>
+	<div class="col-lg col-md-4 " ><p >Beef</p>something</div>
+	<div class="col-lg col-md-8 " ><p>Sushi</p>something</div>
+</div>
 </div>
 
 </body>

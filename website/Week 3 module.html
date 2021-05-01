@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>New sublime JS Module</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+	 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+	 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+
+</head>
+
+
+<style type="text/css">
+	#header-nav{
+		background-color: #f6b319;
+		border-radius:0;
+		border:0;
+			}
+	#log-img{
+		background:url('benz.jpg') no-repeat;
+		width: 150px;
+		height: 150px;
+		margin:5px;
+	}
+	.navbar-brand{
+		padding-top: 25px;
+		}
+	.navbar-brand h1 
+	{
+		font-family: 'Lora',serif;
+		color: #557c3e;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px #222;
+		margin-top: 0;
+		line-height: .75;
+
+	}
+	.navbar-brand a:hover, .navbar-brand a:focus
+	{		
+		text-decoration: none;
+	}
+	.navbar-brand p{
+		color: #000;
+		text-transform: uppercase;
+		font-size: .7em;
+		margin-top: 15px;
+	}
+	.navbar-brand p span{
+		vertical-align: top;
+	}
+	.collapsemenu{
+		background-color: red;
+		color: blue;
+		border: black;
+	}
+	@media (min-width: 768px){
+		.navbar-toggler{
+			display: none;
+		}
+	}
+	.topnav{
+		margin:15px;
+	}
+/*  <img src="logo.png" width="200" height="200"> */
+</style>
+<body>
+	<h2>My First JavaScript</h2>
+
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				 
+				<a href="index.html" class="float-left d-none d-md-block d-lg-block">
+					<div id="log-img" alt="logo image"></div> 
+				</a>
+
+					<div class="navbar-brand">
+						<a href="index.html"> <h1>New Application</h1></a>
+						<p>star- <span> 5 star </span></p>
+					</div>
+			</div>
+<nav class="navbar navbar-expand-md navbar-dark topnav">
+	<button class="navbar-light navbar-toggler " data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+	</button>
+		
+	<div id="collapsibleNavbar" class="collapse navbar-collapse " >
+		<ul id="nav-list" class="navbar-nav ">
+			<li>
+				<a href="index.html" class="topnav">
+					<span class="fas fa-thumbs-up"></span>
+						<br class="nav-item nav-link active d-none d-sm-block " >Menu</a>
+			</li>
+			<li>
+				<a href="index.html" class="topnav">
+					<span class="fas fa-cloud"></span>
+						<br class="d-none d-sm-block">About
+				</a>
+
+			</li>
+		</ul>
+	</div>  
+</nav>
+					
+		</div>
+	</nav>
+</header>
+
+</body>
+</html>
